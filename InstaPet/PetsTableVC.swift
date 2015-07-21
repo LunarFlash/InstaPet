@@ -9,6 +9,10 @@
 import UIKit
 
 class PetsTableVC: PFQueryTableViewController {
+    
+    let cellIdentifier:String = "PetCell"
+    
+    
 
     /*
     Within the first init, a couple of things happen:
@@ -25,6 +29,8 @@ class PetsTableVC: PFQueryTableViewController {
         self.paginationEnabled = true
         self.objectsPerPage = 25
         self.parseClassName = "Pet"
+
+        
     }
     
 
@@ -36,14 +42,14 @@ class PetsTableVC: PFQueryTableViewController {
         self.paginationEnabled = true
         self.objectsPerPage = 25
         self.parseClassName = "Pet"
-        
+
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,16 +88,45 @@ class PetsTableVC: PFQueryTableViewController {
     
     // returning a explicitly unwrapped PFTableViewCell instance rather than UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
-        let cellIdentifier:String = "Cell"
-        var cell:PFTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? PFTableViewCell
+        var cell:PetsTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? PetsTableViewCell
         
         if (cell == nil) {
-            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
+            cell = PetsTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
         }
         // Normally, when you work with an optional, you need to unwrap it. Before you can do it, you must check whether the optional is nil. You can’t unwrap an optional that has the possibility of being nil. In our case, we use optional binding (if-let) to verify if the optional is non-nil. If it contains a value, we make that value available as a temporary constant (pfObject).
         if let pfObject = object {
             // casts pfObject[""name"] to optional String?, because the object may or may not have a property called name and it could be nil.
-            cell?.textLabel?.text = pfObject["name"] as? String
+            cell?.petNameLabel?.text = pfObject["name"] as? String
+            var votes:Int? = pfObject["votes"] as? Int
+            if votes == nil {
+                votes = 0
+            }
+            cell?.petVotesLabel?.text = "\(votes!) votes"
+            
+            var credit:String? = pfObject["cc_by"] as? String
+            if credit != nil {
+                cell?.petCreditLabel?.text = "\(credit!) / CC 2.0"
+            }
+            cell?.petImageView?.image = nil
+            if var urlString:String? = pfObject["url"] as? String {
+                var url:NSURL? = NSURL(string: urlString!)
+                if var url:NSURL? = NSURL(string: urlString!) {
+                    var error:NSError?
+                    var request:NSURLRequest = NSURLRequest(URL: url!, cachePolicy: NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval: 5.0)
+                    
+                    NSOperationQueue.mainQueue().cancelAllOperations()
+                    
+                    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: { (response:NSURLResponse!, imageData:NSData!, error:NSError!) -> Void in
+                            cell?.petImageView?.image = UIImage(data: imageData)
+                        
+                    })
+                    
+                }
+                
+            }
+            
+            
+            
         }
         // Why is it optional? When there’s no cell to dequeue, this method will return nil.
         return cell;

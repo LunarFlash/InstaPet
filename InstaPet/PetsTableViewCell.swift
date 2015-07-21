@@ -22,7 +22,7 @@ class PetsTableViewCell: PFTableViewCell {
     @IBOutlet weak var petNameLabel:UILabel?
     @IBOutlet weak var petVotesLabel:UILabel?
     @IBOutlet weak var petCreditLabel:UILabel?
-    
+    @IBOutlet weak var petPawIcon:UIImageView?
     
 
 }
