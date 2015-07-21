@@ -18,6 +18,7 @@ class PetsTableVC: PFQueryTableViewController {
     Then, we enable pagination and set the maximum number of objects in our table to 25.
     Finally, we store parameter className in the instance property parseClassName.
     */
+    // Init programmatically
     override init(style: UITableViewStyle, className: String?) {
         super.init(style: style, className: className)
         
@@ -25,13 +26,22 @@ class PetsTableVC: PFQueryTableViewController {
         self.paginationEnabled = true
         self.objectsPerPage = 25
         
-        self.parseClassName = className
+        self.parseClassName = "Pet"
     }
     
-    // A required initializer init, which takes one parameter: an instance of NSCoder. It’s contents is irrelevant for now,
+
+    // A required initializer init for Storyboard
     required init!(coder aDecoder: NSCoder!) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        //fatalError("init(coder:) has not been implemented")
+        self.pullToRefreshEnabled = true
+        self.paginationEnabled = true
+        self.objectsPerPage = 25
+        
+        self.parseClassName = "Pet"
+        
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
