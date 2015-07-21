@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96720061479391377C837CFC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBD2625495180B3F837C694 /* libPods.a */; };
 		9C21FA921B5DFAEA00B9A2D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21FA911B5DFAEA00B9A2D3 /* AppDelegate.swift */; };
 		9C21FA941B5DFAEA00B9A2D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21FA931B5DFAEA00B9A2D3 /* ViewController.swift */; };
 		9C21FA971B5DFAEA00B9A2D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C21FA951B5DFAEA00B9A2D3 /* Main.storyboard */; };
 		9C21FA991B5DFAEA00B9A2D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C21FA981B5DFAEA00B9A2D3 /* Images.xcassets */; };
 		9C21FA9C1B5DFAEA00B9A2D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C21FA9A1B5DFAEA00B9A2D3 /* LaunchScreen.xib */; };
 		9C21FAA81B5DFAEA00B9A2D3 /* InstaPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21FAA71B5DFAEA00B9A2D3 /* InstaPetTests.swift */; };
+		9CF7D1EB1B5DFDE100949C4A /* Paws.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D1EA1B5DFDE100949C4A /* Paws.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		266C3B0624B44AA01BAFC342 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		697C7CF881A19BEA665BF3A1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7BBD2625495180B3F837C694 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C21FA8C1B5DFAEA00B9A2D3 /* InstaPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C21FA901B5DFAEA00B9A2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C21FA911B5DFAEA00B9A2D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		9C21FAA11B5DFAEA00B9A2D3 /* InstaPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C21FAA61B5DFAEA00B9A2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C21FAA71B5DFAEA00B9A2D3 /* InstaPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPetTests.swift; sourceTree = "<group>"; };
+		9CF7D1E81B5DFDE100949C4A /* InstaPet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaPet-Bridging-Header.h"; sourceTree = "<group>"; };
+		9CF7D1E91B5DFDE100949C4A /* Paws.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paws.h; sourceTree = "<group>"; };
+		9CF7D1EA1B5DFDE100949C4A /* Paws.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paws.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96720061479391377C837CFC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +71,8 @@
 				9C21FA8E1B5DFAEA00B9A2D3 /* InstaPet */,
 				9C21FAA41B5DFAEA00B9A2D3 /* InstaPetTests */,
 				9C21FA8D1B5DFAEA00B9A2D3 /* Products */,
+				EE47CCAA5A640DF1E167CBFC /* Pods */,
+				A5D6FDF0699C299982D7DD68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +94,9 @@
 				9C21FA981B5DFAEA00B9A2D3 /* Images.xcassets */,
 				9C21FA9A1B5DFAEA00B9A2D3 /* LaunchScreen.xib */,
 				9C21FA8F1B5DFAEA00B9A2D3 /* Supporting Files */,
+				9CF7D1E91B5DFDE100949C4A /* Paws.h */,
+				9CF7D1EA1B5DFDE100949C4A /* Paws.m */,
+				9CF7D1E81B5DFDE100949C4A /* InstaPet-Bridging-Header.h */,
 			);
 			path = InstaPet;
 			sourceTree = "<group>";
@@ -112,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A5D6FDF0699C299982D7DD68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BBD2625495180B3F837C694 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE47CCAA5A640DF1E167CBFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				697C7CF881A19BEA665BF3A1 /* Pods.debug.xcconfig */,
+				266C3B0624B44AA01BAFC342 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C21FAAB1B5DFAEA00B9A2D3 /* Build configuration list for PBXNativeTarget "InstaPet" */;
 			buildPhases = (
+				66FC35B1B3CE837CA05E5813 /* Check Pods Manifest.lock */,
 				9C21FA881B5DFAEA00B9A2D3 /* Sources */,
 				9C21FA891B5DFAEA00B9A2D3 /* Frameworks */,
 				9C21FA8A1B5DFAEA00B9A2D3 /* Resources */,
+				19219E7D7F58432F970CAC0E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +189,7 @@
 		9C21FA841B5DFAEA00B9A2D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Vento LLC";
 				TargetAttributes = {
@@ -207,6 +241,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19219E7D7F58432F970CAC0E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66FC35B1B3CE837CA05E5813 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C21FA881B5DFAEA00B9A2D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,6 +281,7 @@
 			files = (
 				9C21FA941B5DFAEA00B9A2D3 /* ViewController.swift in Sources */,
 				9C21FA921B5DFAEA00B9A2D3 /* AppDelegate.swift in Sources */,
+				9CF7D1EB1B5DFDE100949C4A /* Paws.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,21 +408,28 @@
 		};
 		9C21FAAC1B5DFAEA00B9A2D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 697C7CF881A19BEA665BF3A1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = InstaPet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InstaPet/InstaPet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9C21FAAD1B5DFAEA00B9A2D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266C3B0624B44AA01BAFC342 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = InstaPet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InstaPet/InstaPet-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +486,7 @@
 				9C21FAAD1B5DFAEA00B9A2D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C21FAAE1B5DFAEA00B9A2D3 /* Build configuration list for PBXNativeTarget "InstaPetTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +495,7 @@
 				9C21FAB01B5DFAEA00B9A2D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
