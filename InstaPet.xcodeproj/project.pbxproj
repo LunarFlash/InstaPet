@@ -14,7 +14,7 @@
 		9C21FA991B5DFAEA00B9A2D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C21FA981B5DFAEA00B9A2D3 /* Images.xcassets */; };
 		9C21FA9C1B5DFAEA00B9A2D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C21FA9A1B5DFAEA00B9A2D3 /* LaunchScreen.xib */; };
 		9C21FAA81B5DFAEA00B9A2D3 /* InstaPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21FAA71B5DFAEA00B9A2D3 /* InstaPetTests.swift */; };
-		9CF7D1EB1B5DFDE100949C4A /* Paws.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D1EA1B5DFDE100949C4A /* Paws.m */; };
+		9CADF8871B5E0566000FC389 /* PetsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CADF8861B5E0566000FC389 /* PetsTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +41,9 @@
 		9C21FAA11B5DFAEA00B9A2D3 /* InstaPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C21FAA61B5DFAEA00B9A2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C21FAA71B5DFAEA00B9A2D3 /* InstaPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPetTests.swift; sourceTree = "<group>"; };
+		9CADF8861B5E0566000FC389 /* PetsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetsTableVC.swift; sourceTree = "<group>"; };
 		9CF7D1E81B5DFDE100949C4A /* InstaPet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaPet-Bridging-Header.h"; sourceTree = "<group>"; };
 		9CF7D1E91B5DFDE100949C4A /* Paws.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paws.h; sourceTree = "<group>"; };
-		9CF7D1EA1B5DFDE100949C4A /* Paws.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paws.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +95,8 @@
 				9C21FA9A1B5DFAEA00B9A2D3 /* LaunchScreen.xib */,
 				9C21FA8F1B5DFAEA00B9A2D3 /* Supporting Files */,
 				9CF7D1E91B5DFDE100949C4A /* Paws.h */,
-				9CF7D1EA1B5DFDE100949C4A /* Paws.m */,
 				9CF7D1E81B5DFDE100949C4A /* InstaPet-Bridging-Header.h */,
+				9CADF8861B5E0566000FC389 /* PetsTableVC.swift */,
 			);
 			path = InstaPet;
 			sourceTree = "<group>";
@@ -280,8 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C21FA941B5DFAEA00B9A2D3 /* ViewController.swift in Sources */,
+				9CADF8871B5E0566000FC389 /* PetsTableVC.swift in Sources */,
 				9C21FA921B5DFAEA00B9A2D3 /* AppDelegate.swift in Sources */,
-				9CF7D1EB1B5DFDE100949C4A /* Paws.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
