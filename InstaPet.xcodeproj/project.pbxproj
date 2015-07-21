@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		96720061479391377C837CFC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBD2625495180B3F837C694 /* libPods.a */; };
 		9C21FA921B5DFAEA00B9A2D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21FA911B5DFAEA00B9A2D3 /* AppDelegate.swift */; };
-		9C21FA941B5DFAEA00B9A2D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21FA931B5DFAEA00B9A2D3 /* ViewController.swift */; };
 		9C21FA971B5DFAEA00B9A2D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C21FA951B5DFAEA00B9A2D3 /* Main.storyboard */; };
 		9C21FA991B5DFAEA00B9A2D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C21FA981B5DFAEA00B9A2D3 /* Images.xcassets */; };
 		9C21FA9C1B5DFAEA00B9A2D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C21FA9A1B5DFAEA00B9A2D3 /* LaunchScreen.xib */; };
 		9C21FAA81B5DFAEA00B9A2D3 /* InstaPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21FAA71B5DFAEA00B9A2D3 /* InstaPetTests.swift */; };
 		9CADF8871B5E0566000FC389 /* PetsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CADF8861B5E0566000FC389 /* PetsTableVC.swift */; };
+		9CCA2C0F1B5E980900EDDCCE /* PetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA2C0E1B5E980900EDDCCE /* PetsTableViewCell.swift */; };
+		9CCA2C111B5E9B2900EDDCCE /* PetsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCA2C101B5E9B2900EDDCCE /* PetsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,6 @@
 		9C21FA8C1B5DFAEA00B9A2D3 /* InstaPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C21FA901B5DFAEA00B9A2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C21FA911B5DFAEA00B9A2D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C21FA931B5DFAEA00B9A2D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C21FA961B5DFAEA00B9A2D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C21FA981B5DFAEA00B9A2D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9C21FA9B1B5DFAEA00B9A2D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		9C21FAA61B5DFAEA00B9A2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C21FAA71B5DFAEA00B9A2D3 /* InstaPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPetTests.swift; sourceTree = "<group>"; };
 		9CADF8861B5E0566000FC389 /* PetsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetsTableVC.swift; sourceTree = "<group>"; };
+		9CCA2C0E1B5E980900EDDCCE /* PetsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetsTableViewCell.swift; sourceTree = "<group>"; };
+		9CCA2C101B5E9B2900EDDCCE /* PetsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PetsTableViewCell.xib; sourceTree = "<group>"; };
 		9CF7D1E81B5DFDE100949C4A /* InstaPet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaPet-Bridging-Header.h"; sourceTree = "<group>"; };
 		9CF7D1E91B5DFDE100949C4A /* Paws.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paws.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				9C21FA911B5DFAEA00B9A2D3 /* AppDelegate.swift */,
-				9C21FA931B5DFAEA00B9A2D3 /* ViewController.swift */,
 				9C21FA951B5DFAEA00B9A2D3 /* Main.storyboard */,
 				9C21FA981B5DFAEA00B9A2D3 /* Images.xcassets */,
 				9C21FA9A1B5DFAEA00B9A2D3 /* LaunchScreen.xib */,
@@ -97,6 +98,8 @@
 				9CF7D1E91B5DFDE100949C4A /* Paws.h */,
 				9CF7D1E81B5DFDE100949C4A /* InstaPet-Bridging-Header.h */,
 				9CADF8861B5E0566000FC389 /* PetsTableVC.swift */,
+				9CCA2C0E1B5E980900EDDCCE /* PetsTableViewCell.swift */,
+				9CCA2C101B5E9B2900EDDCCE /* PetsTableViewCell.xib */,
 			);
 			path = InstaPet;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C21FA971B5DFAEA00B9A2D3 /* Main.storyboard in Resources */,
+				9CCA2C111B5E9B2900EDDCCE /* PetsTableViewCell.xib in Resources */,
 				9C21FA9C1B5DFAEA00B9A2D3 /* LaunchScreen.xib in Resources */,
 				9C21FA991B5DFAEA00B9A2D3 /* Images.xcassets in Resources */,
 			);
@@ -279,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C21FA941B5DFAEA00B9A2D3 /* ViewController.swift in Sources */,
+				9CCA2C0F1B5E980900EDDCCE /* PetsTableViewCell.swift in Sources */,
 				9CADF8871B5E0566000FC389 /* PetsTableVC.swift in Sources */,
 				9C21FA921B5DFAEA00B9A2D3 /* AppDelegate.swift in Sources */,
 			);

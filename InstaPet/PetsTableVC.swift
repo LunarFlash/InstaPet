@@ -21,11 +21,9 @@ class PetsTableVC: PFQueryTableViewController {
     // Init programmatically
     override init(style: UITableViewStyle, className: String?) {
         super.init(style: style, className: className)
-        
         self.pullToRefreshEnabled = true
         self.paginationEnabled = true
         self.objectsPerPage = 25
-        
         self.parseClassName = "Pet"
     }
     
@@ -37,7 +35,6 @@ class PetsTableVC: PFQueryTableViewController {
         self.pullToRefreshEnabled = true
         self.paginationEnabled = true
         self.objectsPerPage = 25
-        
         self.parseClassName = "Pet"
         
     }

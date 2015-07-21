@@ -18,8 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.setApplicationId("B3eDiHL8hyJBtbvTD73uGJ7uzqKJ3V07dNazhUlc", clientKey: "NZ5n4Ordx9AB7b6Q5Wg6zBXZcqhEzCPtv4JnNWg9")
         
+        self.setGlobalAppearance()
         
         return true
+    }
+    
+    func setGlobalAppearance (){
+        UINavigationBar.appearance().tintColor = UIColor(red: 0.05, green: 0.47, blue: 0.91, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0.05, green: 0.47, blue: 0.91, alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
     }
 
     func applicationWillResignActive(application: UIApplication) {
